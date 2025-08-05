@@ -33,20 +33,21 @@ const navItems = ref([
     isActive: false,
   },
 ]);
-
+function checkPath() {
+  const id = navItems.value.find((item) => item.href === route.path)?.id;
+  id && isActiveMenu(id);
+}
 function isActiveMenu(id: string) {
   navItems.value = navItems.value.map((item) => ({
     ...item,
     isActive: item.id === id,
   }));
 }
-onMounted(() => {
-  const id = navItems.value.find((item) => item.href === route.path)?.id;
-  id && isActiveMenu(id);
-});
+onMounted(checkPath);
 const navBarActive = computed(() =>
   navItems.value.some((item) => item.isActive)
 );
+watch(() => route.path, checkPath)
 </script>
 <template>
   <nav
