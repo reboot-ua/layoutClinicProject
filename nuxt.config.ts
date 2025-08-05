@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   srcDir: 'src/.',
   components: {
     global: true,
-    dirs: ['~/components/general'],
+    dirs: [
+      '~/components/general',
+      '~/components/universal'
+    ],
   },
 })
