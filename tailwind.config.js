@@ -92,9 +92,9 @@ export default {
           },
         ],
       },
-      width: {
+      maxWidth: {
         max: "1440px",
-        container: "1280px",
+        contant: "1280px",
       },
     },
   },
