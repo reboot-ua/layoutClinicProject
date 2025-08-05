@@ -6,15 +6,14 @@
       </NuxtLink>
     </div>
       <LNavBarHeader />
-    <div>
-      button
+    <div class="flex text-center gap-4">
+      <LUserAvatar />
+      <div class="flex text-center">button</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import LNavBarHeader from './LNavBarHeader.vue';
-
 </script>
 
 <style scoped></style>
