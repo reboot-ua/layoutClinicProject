@@ -7,9 +7,9 @@ avatar: '/user/user_icon.svg',
 });
 </script>
 <template>
-  <div class="relative">
-    <div class="rounded-full overflow-hidden size-55">
-      <NuxtImg :src="user.avatar" alt="user icon" />
+  <div class="relative flex text-center">
+    <div class="rounded-full overflow-hidden flex items-center">
+      <NuxtImg :src="user.avatar" alt="user icon" class="h-12 w-12"/>
     </div>
     <div
       v-if="user.active"
