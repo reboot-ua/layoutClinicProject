@@ -1,5 +1,5 @@
 <template>
-  <div class="default-layout flex flex-col min-h-screen">
+  <div class="default-layout flex flex-col min-h-screen max-w-max mx-auto">
     <LHeader />
     <div class="flex-auto">
       <slot />

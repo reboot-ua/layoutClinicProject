@@ -92,6 +92,10 @@ export default {
           },
         ],
       },
+      width: {
+        max: "1440px",
+        container: "1280px",
+      },
     },
   },
   plugins: [],

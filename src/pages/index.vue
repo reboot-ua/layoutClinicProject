@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <h1>Hello World</h1>
-  </div>
+  <div class="text-h1">Get ready for your best ever Dental Experience!</div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
