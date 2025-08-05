@@ -1,38 +1,10 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import {storeToRefs} from "pinia";
+import {useNuvStore} from "../../store/useNuvStore";
 const route = useRoute();
-const navItems = ref([
-  {
-    id: "1",
-    label: "Home",
-    href: "/",
-    isActive: false,
-  },
-  {
-    id: "2",
-    label: "Services",
-    href: "/services",
-    isActive: false,
-  },
-  {
-    id: "3",
-    label: "Blog",
-    href: "/blog",
-    isActive: false,
-  },
-  {
-    id: "4",
-    label: "About",
-    href: "/about",
-    isActive: false,
-  },
-  {
-    id: "5",
-    label: "Contact",
-    href: "/contact",
-    isActive: false,
-  },
-]);
+const {navItems} = storeToRefs(useNuvStore())
+
 function checkPath() {
   const id = navItems.value.find((item) => item.href === route.path)?.id;
   id && isActiveMenu(id);
