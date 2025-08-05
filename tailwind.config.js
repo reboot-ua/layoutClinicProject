@@ -26,6 +26,72 @@ export default {
           100: "#cecece",
         },
       },
+      fontSize: {
+        h1: [
+        "3.875rem",
+          {
+            lineHeight: '1.2',
+            fontWeight: '600',
+            letterSpacing: '-2%',
+          },
+        ],
+        h2: [
+          "2.625rem",
+          {
+            lineHeight: '1.25',
+            fontWeight: '500',
+            letterSpacing: '0',
+          },
+        ],
+        h3: [
+          "2.25rem",
+          {
+            lineHeight: '1.55',
+            fontWeight: '400',
+            letterSpacing: '0',
+          },
+        ],
+        h4: [
+          "1.5rem",
+          {
+            lineHeight: '1.5',
+            fontWeight: '400',
+            letterSpacing: '0',
+          },
+        ],
+        b1: [
+          "1.125rem",
+          {
+            lineHeight: '1.55',
+            fontWeight: '400',
+            letterSpacing: '1.5%',
+          },
+        ],
+        b2: [
+          "1rem",
+          {
+            lineHeight: '1.55',
+            fontWeight: '400',
+            letterSpacing: '1.5',
+          },
+        ],  
+        b3: [
+          "0.875rem",
+          {
+            lineHeight: '1.55',
+            fontWeight: '400',
+            letterSpacing: '2%',
+          },
+        ],
+        b4: [
+          "0.75rem",
+          {
+            lineHeight: '1.55',
+            fontWeight: '400',
+            letterSpacing: '1.5%',
+          },
+        ],
+      },
     },
   },
   plugins: [],
