@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="default-layout flex flex-col min-h-screen">
     <LHeader />
     <div class="flex-auto">
       <slot />
@@ -9,3 +9,9 @@
 </template>
 
 <script setup lang="ts"></script>
+
+<style>
+.default-layout {
+  font-family: "GeneralSans", sans-serif;
+}
+</style>
