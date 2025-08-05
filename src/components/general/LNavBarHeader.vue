@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { useRoute } from "vue-router";
+const route = useRoute();
 const navItems = ref([
   {
     id: "1",
     label: "Home",
     href: "/",
-    isActive: true,
+    isActive: false,
   },
   {
     id: "2",
@@ -32,20 +34,35 @@ const navItems = ref([
   },
 ]);
 
-function isActiveMenu(id:string) {
-  navItems.value=navItems.value.map(item => ({ ...item, isActive: item.id === id}))
+function isActiveMenu(id: string) {
+  navItems.value = navItems.value.map((item) => ({
+    ...item,
+    isActive: item.id === id,
+  }));
 }
+onMounted(() => {
+  const id = navItems.value.find((item) => item.href === route.path)?.id;
+  id && isActiveMenu(id);
+});
+const navBarActive = computed(() =>
+  navItems.value.some((item) => item.isActive)
+);
 </script>
 <template>
-  <nav class="flex text-center gap-x-10 text-blue-dark">
-    <ul v-for="item in navItems" :key="item.id" >
+  <nav
+    class="flex text-center gap-x-10 text-blue-dark transition-all duration-200"
+    :class="navBarActive ? 'opacity-100' : 'opacity-0'"
+  >
+    <ul v-for="item in navItems" :key="item.id">
       <li>
-        <nuxt-link :href="item.href"
-        class="text-b2"
-        :class="item.isActive ?' font-semibold': 'font-semimedium'"
-        @click="isActiveMenu(item.id)"
+        <nuxt-link
+          :href="item.href"
+          class="text-b2"
+          :class="item.isActive ? ' font-semibold' : 'font-semimedium'"
+          @click="isActiveMenu(item.id)"
         >
-        {{ item.label }}</nuxt-link>
+          {{ item.label }}</nuxt-link
+        >
       </li>
     </ul>
   </nav>
