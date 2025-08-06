@@ -36,10 +36,17 @@ const socialList = ref([
 
 <template>
   <div>
-    <ul class="flex gap-x-5">
-      <li v-for="item in socialList" :key="item.id">
+    <ul class="flex gap-x-2.5 lg:gap-x-5 mt-2.5 lg:mt-0">
+      <li
+        v-for="item in socialList"
+        :key="item.id"
+        class="transition-all duration-500 opacity-50 lg:opacity-100 lg:hover:opacity-50"
+      >
         <a :href="item.url" target="_blank">
-          <img :src="item.icon" :alt="item.title"/>
+          <img
+            :src="item.icon"
+            :alt="item.title"
+          />
         </a>
       </li>
     </ul>

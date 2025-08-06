@@ -13,7 +13,7 @@ function closeMobileMenu() {
 
 <template>
   <div
-    class="h-screen w-screen bg-white fixed top-0 left-0 overflow-hidden transition-all duration-500 flex flex-col items-center"
+    class="z-20 h-screen w-screen bg-white fixed top-0 left-0 overflow-hidden transition-all duration-500 flex flex-col items-center"
     :class="!modelValue && 'translate-x-full opacity-0'"
   >
     <div class="w-full  flex justify-between items-center my-10 px-5">

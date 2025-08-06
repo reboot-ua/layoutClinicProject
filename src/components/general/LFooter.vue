@@ -4,19 +4,30 @@ import LNavBarFooter from "./LNavBarFooter.vue";
 
 <style scoped></style>
 <template>
-  <div class="flex flex-col">
-    <div class="flex items-center justify-between mb-12">
+  <footer class=" lg:pb-8 max-w-contant w-full mx-auto">
+     <div class="flex items-center justify-between lg:pb-12 pb-8 px-5 lg:px-0">
       <LLogo />
-      <LNavBarFooter />
-    </div>
-    <div class="border-t-2 border-t-blue-dark mb-9 flex justify-between items-center pt-8">
-      <div>
-        All rights reserved ® uifry.com  | Terms and conditions apply!
+
+      <LNavBarFooter class="hidden lg:flex"/>
+
+      <div class="h-12 w-12 bg-blue-dark">
       </div>
-      <div>
-        <LSocialMedia />
-      </div>
+
     </div>
-  </div>
+
+<!--    <div class="lg:hidden text-b2 px-5">-->
+<!--      All our PRO level features at your fingertips.-->
+<!--    </div>-->
+
+    <div class="lg:hidden text-b1 font-semibold mx-5"> Follow Us</div>
+
+    <div class="border-t border-gray lg:border-blue-dark flex justify-between items-center mx-5 lg:mx-0 pt-0 lg:pt-5 w-fit lg:w-full">
+      <span class="hidden lg:inline">All rights reserved ® uifry.com  | Terms and conditions apply!</span>
+      <LSocialMedia />
+    </div>
+
+      <div class=" p-1 lg:hidden mt-14 w-full flex justify-center items-center text-b3 font-medium text-white bg-blue-dark"> Uifry by M.Aze, CopyRights are protected by Uifry</div>
+
+  </footer>
 </template>
 
