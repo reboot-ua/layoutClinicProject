@@ -11,7 +11,7 @@ defineProps<{ title: string, phone: string }>()
       </span>
     </span>
     <span class="flex flex-col">
-      <span class="text-blue text-b2 font-semibold">{{ title }}</span>
+      <span class="text-blue text-b3 font-semibold">{{ title }}</span>
       <span
 
         class="text-blue-dark text-b3"

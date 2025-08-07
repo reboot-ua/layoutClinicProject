@@ -15,9 +15,6 @@ import LPhoneBlock from "./LPhoneBlock.vue";
     <div class="flex items-center gap-x-4 mt-8 mb-12">
       <LButton> Get Started</LButton>
       <LPhoneBlock title="Dental 24H Emergency" phone="0900-78601"/>
-      <div>
-
-      </div>
     </div>
 
   </LSection>
