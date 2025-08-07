@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import LFirstScreen from "../components/pages/home/firstScreen/LFirstScreen.vue";
+
+</script>
 <template>
-  <div class="text-h1 w-full">Get ready for your best ever Dental Experience!</div>
+  <div>
+    <LFirstScreen/>
+  </div>
 </template>
 
-<script setup lang="ts"></script>

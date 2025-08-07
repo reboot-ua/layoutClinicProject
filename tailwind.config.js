@@ -96,6 +96,9 @@ export default {
         max: "1440px",
         contant: "1280px",
       },
+      width: {
+        '12.5': '3.125rem'
+      }
     },
   },
   plugins: [],

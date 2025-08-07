@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     global: true,
     dirs: [
       '~/components/general',
-      '~/components/universal'
+      '~/components/universal',
     ],
   },
 })
