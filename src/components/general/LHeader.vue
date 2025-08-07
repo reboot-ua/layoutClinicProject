@@ -1,14 +1,16 @@
 <script setup lang="ts">
-  const activeMobileMenu = ref(false)
+import {useMobileMenuStore} from "../../store/useMobileMenuStore";
+import {storeToRefs} from "pinia";
 
-  function toggleMobileMenu() {
-    activeMobileMenu.value = !activeMobileMenu.value
-  }
+const {activeMobileMenu} = storeToRefs(useMobileMenuStore());
+const {toggleMobileMenu} = useMobileMenuStore()
+
 
 </script>
 <template>
-  <header class="lg:bg-blue-light flex justify-between items-center max-w-contant mt-10 lg:py-4 px-5 lg:px-10 rounded-lg">
-    <LLogo class="hidden lg:block" />
+  <header
+    class="lg:bg-blue-light flex justify-between items-center max-w-contant mt-10 lg:py-4 px-5 lg:px-10 rounded-lg">
+    <LLogo class="hidden lg:block"/>
 
     <LHeaderMobileVision
       class="lg:hidden"
@@ -19,9 +21,9 @@
 
     <div class="hidden lg:flex text-center gap-4">
 
-      <LUserAvatar />
+      <LUserAvatar/>
 
-      <LButton> Book Now </LButton>
+      <LButton> Book Now</LButton>
 
     </div>
 
