@@ -10,7 +10,6 @@ const {openMobileMenu} = useMobileMenuStore();
   <footer class=" lg:pb-8 max-w-contant w-full mx-auto">
     <div class="flex items-center justify-between lg:pb-12 pb-8 px-5 lg:px-0">
       <LLogo/>
-
       <LNavBarFooter class="hidden lg:flex"/>
 
       <div
@@ -18,17 +17,14 @@ const {openMobileMenu} = useMobileMenuStore();
         @click="openMobileMenu"
       >
         <div class="bg-white h-[3px] w-[34px] rounded-md"/>
-
         <div class="bg-white h-[3px] w-[27px] rounded-md"/>
-
         <div class="bg-white h-[3px] w-[21px] rounded-md"/>
       </div>
-
     </div>
 
-    <!--    <div class="lg:hidden text-b2 px-5">-->
-    <!--      All our PRO level features at your fingertips.-->
-    <!--    </div>-->
+    <div class="lg:hidden text-b1 text-text font-medium px-5 pb-8 ">
+      All our PRO level features at your fingertips.
+    </div>
 
     <div class="lg:hidden text-b1 font-semibold mx-5"> Follow Us</div>
 
@@ -42,8 +38,6 @@ const {openMobileMenu} = useMobileMenuStore();
       class=" p-1 lg:hidden mt-14 w-full flex justify-center items-center text-b3 font-medium text-white bg-blue-dark">
       Uifry by M.Aze, CopyRights are protected by Uifry
     </div>
-    <!--    <LMobileMenu v-model="activeMobileMenu"/>-->
-
   </footer>
 </template>
 
