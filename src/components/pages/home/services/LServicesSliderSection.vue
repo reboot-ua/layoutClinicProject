@@ -4,7 +4,7 @@
 
 <template>
   <LSection class="bg-blue-light py-12 px-5 mb-52">
-    Card
+<!--    <LCard >-->
   </LSection>
 </template>
 
