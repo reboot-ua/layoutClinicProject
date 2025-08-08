@@ -98,7 +98,10 @@ export default {
       },
       width: {
         '12.5': '3.125rem'
-      }
+      },
+      boxShadow: {
+        userMessageCard: '0 8px 40px 0 rgba(0, 0, 0, 0.1) '
+      },
     },
   },
   plugins: [],

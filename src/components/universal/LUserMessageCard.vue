@@ -15,11 +15,11 @@ const props = defineProps<Props>()
 const iconPath = computed(() => {
   switch (props.icon) {
     case 'facebook':
-      return 'facebook.com'
+      return ''
     case 'instagram':
-      return 'instagram.com'
+      return ''
     case 'linkedin':
-      return 'linkedin.com'
+      return '/images/icons/in.png'
     default:
       return ''
 
@@ -28,33 +28,33 @@ const iconPath = computed(() => {
 </script>
 
 <template>
-  <div>
-    <div>
-      <div class="flex justify-between items-center">
+  <div class="shadow-userMessageCard rounded-2xl px-5 pt-3 pb-4">
 
-        <div class="flex items-center">
-          <div>
-            <img :src="photo" :alt="name">
-          </div>
-          <div class=" flex flex-col items-center">
-            <span>
+    <div class="flex justify-between items-center">
+
+      <div class="flex items-center gap-x-2">
+        <div class="h-10 w-10 rounded-full">
+          <img :src="photo" :alt="name">
+        </div>
+        <div class=" flex flex-col items-start justify-center">
+            <span class="text-b3 font-medium text-blue-dark">
               {{ name }}
             </span>
-            <span>
+          <span class="text-b4 text-blue-dark">
               {{ position }}
             </span>
-          </div>
         </div>
-
-        <a :href="link" target="_blank">
-          <img :src="iconPath" :alt="icon"/>
-        </a>
-
       </div>
-      <div>
-        {{ message }}
-      </div>
+
+      <a :href="link" target="_blank">
+        <img :src="iconPath" :alt="icon"/>
+      </a>
+
     </div>
+    <div class="text-b4 text-blue-dark mt-2.5 max-w-[300px]">
+      {{ message }}
+    </div>
+
   </div>
 </template>
 
