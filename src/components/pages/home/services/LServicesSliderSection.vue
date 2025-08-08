@@ -25,12 +25,11 @@ const items: serviceIcon[] = [
 </script>
 
 <template>
-  <LSection class="bg-blue-light py-12 px-5 mb-52 flex flex-col">
+  <LSection class="bg-blue-light py-12 px-5 lg:px-9 mb-52 flex flex-col lg:flex-row gap-6 lg:rounded-2lg">
     <LCard
     v-for="(item, i) of items"
     :key="i"
     :item="item"
-    class="mb-4"
     />
   </LSection>
 </template>
