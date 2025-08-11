@@ -9,7 +9,7 @@ const {toggleMobileMenu} = useMobileMenuStore()
 </script>
 <template>
   <header
-    class="lg:bg-blue-light flex justify-between items-center max-w-contant w-full mt-10 lg:py-4 px-5 lg:px-10 rounded-lg">
+    class="lg:bg-blue-light flex justify-between items-center max-w-contant lg:w-full mt-10 lg:py-4 px-5 lg:px-10 rounded-lg">
     <LLogo class="hidden lg:block"/>
 
     <LHeaderMobileVision
