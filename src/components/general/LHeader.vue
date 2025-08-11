@@ -14,7 +14,7 @@ const {toggleMobileMenu} = useMobileMenuStore()
 
     <LHeaderMobileVision
       class="lg:hidden"
-      @click-toggle="toggleMobileMenu "
+      @click-toggle="toggleMobileMenu"
     />
 
     <LNavBarHeader class="hidden lg:flex"/>

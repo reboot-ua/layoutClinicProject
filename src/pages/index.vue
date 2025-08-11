@@ -4,6 +4,7 @@ import LServicesSliderSection from "../components/pages/home/services/LServicesS
 import LBookingSection from "../components/pages/home/booking/LBookingSection.vue";
 import LBenefitsSection from "../components/pages/home/benefits/LBenefitsSection.vue";
 import LBookSection from "../components/pages/home/book/LBookSection.vue";
+import LPreviewSection from "../components/pages/home/preview/LPreviewSection.vue";
 
 </script>
 <template>
@@ -18,5 +19,6 @@ import LBookSection from "../components/pages/home/book/LBookSection.vue";
 
     <LBookSection/>
 
+    <LPreviewSection/>
   </div>
 </template>

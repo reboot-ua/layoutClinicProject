@@ -1,21 +1,22 @@
 import {defineStore} from "pinia";
+import { ref } from "vue";
 
 export const useMobileMenuStore = defineStore(
-  'mobile-menu-store ', ()=> {
+  'mobile-menu-store', ()=> {
     const activeMobileMenu =  ref(false)
 
     function openMobileMenu() { activeMobileMenu.value = true }
 
     function toggleMobileMenu() {activeMobileMenu.value = !activeMobileMenu.value}
 
-    function clodMobileMenu() {activeMobileMenu.value = false}
+    function closeMobileMenu() {activeMobileMenu.value = false}
 
 
     return {
       activeMobileMenu,
       toggleMobileMenu,
       openMobileMenu,
-      clodMobileMenu
+      closeMobileMenu
     }
   }
 )

@@ -7,7 +7,7 @@ const phone = ref('')
 
 <template>
   <LSection class="mb-[120px]">
-    <div class="flex flex-col lg:flex-row lg: justify-between w-full">
+    <div class="flex flex-col lg:flex-row lg:justify-between w-full">
       <div class="lg:flex lg:flex-col max-w-lg">
         <LTitle class="pt-12"> We’re
           <LMarkedWord>welcoming</LMarkedWord>

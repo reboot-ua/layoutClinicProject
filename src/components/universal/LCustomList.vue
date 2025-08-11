@@ -2,8 +2,6 @@
 defineProps<{
   items: string[]
 }>()
-
-
 </script>
 
 <template>
@@ -24,7 +22,3 @@ defineProps<{
     </ul>
   </div>
 </template>
-
-<style scoped>
-
-</style>

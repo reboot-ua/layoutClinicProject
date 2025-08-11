@@ -1,4 +1,5 @@
 import {defineStore} from "pinia";
+import { ref } from "vue";
 
 export const useNuvStore = defineStore('nav-store', () => {
   const navItems = ref([
