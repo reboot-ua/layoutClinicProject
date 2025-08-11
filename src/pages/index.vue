@@ -2,17 +2,21 @@
 import LFirstScreen from "../components/pages/home/firstScreen/LFirstScreen.vue";
 import LServicesSliderSection from "../components/pages/home/services/LServicesSliderSection.vue";
 import LBookingSection from "../components/pages/home/booking/LBookingSection.vue";
+import LBenefitsSection from "../components/pages/home/benefits/LBenefitsSection.vue";
+import LBookSection from "../components/pages/home/book/LBookSection.vue";
 
 </script>
 <template>
   <div>
     <LFirstScreen/>
 
-    <LServicesSliderSection />
+    <LServicesSliderSection/>
 
-    <LBookingSection />
+    <LBookingSection/>
 
+    <LBenefitsSection/>
 
+    <LBookSection/>
   </div>
 </template>
 
