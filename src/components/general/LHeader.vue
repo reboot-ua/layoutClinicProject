@@ -30,6 +30,3 @@ const {toggleMobileMenu} = useMobileMenuStore()
     <LMobileMenu v-model="activeMobileMenu"/>
   </header>
 </template>
-
-
-<style scoped></style>

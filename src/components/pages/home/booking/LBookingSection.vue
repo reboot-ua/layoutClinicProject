@@ -23,7 +23,3 @@ const phone = ref('')
     </div>
   </LSection>
 </template>
-
-<style scoped>
-
-</style>

@@ -17,6 +17,6 @@ import LBookSection from "../components/pages/home/book/LBookSection.vue";
     <LBenefitsSection/>
 
     <LBookSection/>
+
   </div>
 </template>
-
