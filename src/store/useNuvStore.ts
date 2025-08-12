@@ -1,37 +1,37 @@
 export const useNavStore = defineStore('nav-store', () => {
+
   const navItems = ref([
     {
-      active: false,
-      id: '1',
-      title: 'Home',
-      route: '/',
+      id: "1",
+      label: "Home",
+      href: "/",
+      isActive: false,
     },
     {
-      active: false,
-      id: '2',
-      title: 'Services',
-      route: '/services',
+      id: "2",
+      label: "Services",
+      href: "/services",
+      isActive: false,
     },
     {
-      active: false,
-      id: '3',
-      title: 'Blogs',
-      route: '/blogs',
+      id: "3",
+      label: "Blog",
+      href: "/blog",
+      isActive: false,
     },
     {
-      active: false,
-      id: '4',
-      title: 'About',
-      route: '/about',
+      id: "4",
+      label: "About",
+      href: "/about",
+      isActive: false,
     },
     {
-      active: false,
-      id: '5',
-      title: 'Contacts',
-      route: '/contacts',
-    }
-  ])
-
+      id: "5",
+      label: "Contact",
+      href: "/contact",
+      isActive: false,
+    },
+  ]);
   return {
     navItems
   }

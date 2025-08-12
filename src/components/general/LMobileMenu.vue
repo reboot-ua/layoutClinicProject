@@ -28,7 +28,7 @@ function closeMobileMenu() {
         class="text-b1"
         @click="closeMobileMenu"
       >
-        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
+        <nuxt-link :to="item.href">{{ item.label }}</nuxt-link>
       </li>
     </ul>
   </div>

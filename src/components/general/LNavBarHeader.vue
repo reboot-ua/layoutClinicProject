@@ -6,7 +6,7 @@ const route = useRoute();
 const {navItems} = storeToRefs(useNavStore())
 
 function checkPath() {
-  const id = navItems.value.find((item) => item.route === route.path)?.id;
+  const id = navItems.value.find((item) => item.href === route.path)?.id;
   id && isActiveMenu(id);
 }
 function isActiveMenu(id: string) {
@@ -17,7 +17,7 @@ function isActiveMenu(id: string) {
 }
 onMounted(checkPath);
 const navBarActive = computed(() =>
-  navItems.value.some((item) => item.active)
+  navItems.value.some((item) => item.isActive)
 );
 watch(() => route.path, checkPath)
 </script>
