@@ -5,9 +5,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="mt-12 relative ">
-    <div class="hidden lg:flex w-[413px] h-[362px] bg-gradient-to-bl from-blue-sky to-white rounded-2lg lg:relative lg:-top-8 lg:-right-8" />
-    <div class="relative top-0 left-0 lg:absolute mb-16 mask-cover">
+  <div class="relative lg:mr-8 mt-12 lg:mt-0">
+    <div class="hidden lg:block rounded-2lg absolute left-8 bottom-8 bg-gradient-to-bl from-blue-sky to-white h-full w-full" />
+
+    <div class="relative rounded-2lg overflow-hidden">
       <img :src="`/images/pages/main/${photoName}`" alt="foto">
     </div>
   </div>
