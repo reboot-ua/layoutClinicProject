@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 import {storeToRefs} from "pinia";
-import {useNuvStore} from "../../store/useNuvStore";
+import {useNavStore} from "../../store/useNuvStore";
 const route = useRoute();
-const {navItems} = storeToRefs(useNuvStore())
+const {navItems} = storeToRefs(useNavStore())
 
 function checkPath() {
-  const id = navItems.value.find((item) => item.href === route.path)?.id;
+  const id = navItems.value.find((item) => item.route === route.path)?.id;
   id && isActiveMenu(id);
 }
 function isActiveMenu(id: string) {
@@ -17,7 +17,7 @@ function isActiveMenu(id: string) {
 }
 onMounted(checkPath);
 const navBarActive = computed(() =>
-  navItems.value.some((item) => item.isActive)
+  navItems.value.some((item) => item.active)
 );
 watch(() => route.path, checkPath)
 </script>

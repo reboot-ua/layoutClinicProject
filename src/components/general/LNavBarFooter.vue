@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 import {storeToRefs} from "pinia";
-import {useNuvStore} from "../../store/useNuvStore";
-const {navItems} = storeToRefs(useNuvStore())
+import {useNavStore} from "../../store/useNuvStore";
+const {navItems} = storeToRefs(useNavStore())
 
 </script>
 <template>
@@ -13,10 +13,10 @@ const {navItems} = storeToRefs(useNuvStore())
       <li v-for="item in navItems" :key="item.id"
         >
         <nuxt-link
-          :href="item.href"
+          :href="item.route"
           class="text-b2"
         >
-          {{ item.label }}</nuxt-link
+          {{ item.title }}</nuxt-link
         >
       </li>
     </ul>
