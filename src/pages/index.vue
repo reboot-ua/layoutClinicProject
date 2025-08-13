@@ -5,6 +5,7 @@ import LBookingSection from "../components/pages/home/booking/LBookingSection.vu
 import LBenefitsSection from "../components/pages/home/benefits/LBenefitsSection.vue";
 import LBookSection from "../components/pages/home/book/LBookSection.vue";
 import LPreviewSection from "../components/pages/home/preview/LPreviewSection.vue";
+import LMeetSection from "../components/pages/home/meet/LMeetSection.vue";
 
 </script>
 <template>
@@ -20,5 +21,8 @@ import LPreviewSection from "../components/pages/home/preview/LPreviewSection.vu
     <LBookSection/>
 
     <LPreviewSection/>
+
+    <LMeetSection/>
+
   </div>
 </template>

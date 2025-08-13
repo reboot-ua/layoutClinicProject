@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import LCard from "./LCard.vue";
 import type {serviceIcon} from "../../../../types/servises";
 import {onMounted} from "vue";
+import LServicesCard from "./LServicesCard.vue";
 
 const items: serviceIcon[] = [
   {
@@ -28,7 +28,7 @@ const containerRef = ref(null)
 const swiper = useSwiper(containerRef, {
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 2500,
   },
   creativeEffect: {
     prev: {
@@ -54,7 +54,7 @@ onMounted(() => swiper.instance)
                         :key="i"
                         class="px-5"
           >
-            <LCard
+            <LServicesCard
               :item="item"
             />
           </swiper-slide>
@@ -75,7 +75,7 @@ onMounted(() => swiper.instance)
         </button>
       </div>
     </div>
-    <LCard
+    <LServicesCard
       v-for="(item, i) of items"
       :key="i"
       :item="item"
