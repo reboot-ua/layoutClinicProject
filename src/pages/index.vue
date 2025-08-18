@@ -6,6 +6,7 @@ import LBenefitsSection from "../components/pages/home/benefits/LBenefitsSection
 import LBookSection from "../components/pages/home/book/LBookSection.vue";
 import LPreviewSection from "../components/pages/home/preview/LPreviewSection.vue";
 import LMeetSection from "../components/pages/home/meet/LMeetSection.vue";
+import LClientFeedbackSection from "../components/pages/home/clientsFeedback/LClientFeedbackSection.vue";
 
 </script>
 <template>
@@ -24,5 +25,6 @@ import LMeetSection from "../components/pages/home/meet/LMeetSection.vue";
 
     <LMeetSection/>
 
+    <LClientFeedbackSection/>
   </div>
 </template>
